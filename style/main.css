@@ -1,0 +1,165 @@
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* Elementos base. */
+body {
+    background-color: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;     /*Direção defaul do Flex Box*/
+    align-items: center;
+    padding: 0px 38px;
+    background: linear-gradient(to bottom,rgba(0,0,0,.7)10%,rgba(0,0,0,0));
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', times;
+    font-size: 40px;
+    margin-right: 5px;
+}
+
+header .navegacao-primaria {
+    display: flex;
+}
+
+header .navegacao-primaria div {
+    margin-left: 18px;
+}
+
+header .navegacao-primaria a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+header .navegacao-primaria a:hover {
+    color: #fff;
+}
+
+header .navegacao-secundaria {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    right: 4%;
+}
+
+.box {
+    margin-right: 21px;
+    margin-left: 6px;
+}
+
+.search {
+    color: white;
+}
+
+.notifications {
+    color: white;
+}
+
+.profile-icon {
+    height: 35px;
+    width: 35px;
+    border-radius: 4px;
+}
+
+.arrow {
+    margin-left: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #fff transparent transparent;
+}
+
+/* Filme principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/resources/img/Movies/shrek-cover.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.filme-principal .container {
+    margin-left: 20px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.carrossel-filmes {
+    margin-top: 5px;
+    padding: 0 4%;
+}
+
+.content {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.4vw;
+    font-weight: 700;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.content-name {
+    color: #aaa;
+    transition: .2s ease all;
+    text-decoration: none;
+}
+
+.content-name:hover {
+    color: #fff;
+    transition: .1s ease all;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
